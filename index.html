@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+
+    <main>
+        <div id="grid"></div>
+        <div class="controls">
+            
+            <button class="btn mt-1">Color Mode <pre></pre><input id="color-input" type="color" value="#444444"></button>
+            <!-- <button id="color-btn" class="btn">Color Mode</button> -->
+            <button id="rainbow-btn" class="btn">Rainbow Mode</button>
+            <button id="eraser-btn" class="btn">Eraser</button>
+            <button id="clear-btn" class="btn">Clear</button>
+            <input id="range-input" type="range" value="16" min="2" max="64">
+            <label for="grid-range"><span>16</span> X <span>16</span></label>
+        </div>
+    </main>
+
+    <footer> Copyright &copy;<a href="https://github.com/chetan6780">chetan6780</a> </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

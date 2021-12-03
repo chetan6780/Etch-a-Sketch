@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    --primary-dark: #424242 ;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+    --bg-primary:#82b1ff;
+    --bg-primary:#90caf9;
+    --bg-secondary:#b2ebf2;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", cursive;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+}
+header {
+    min-height: 50px;
+    padding-top: 2em;
+    font-size: 1.3em;
+    background: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    text-shadow: rgba(0, 0, 0, 0.317) 3px 1px 10px;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 36px 0;
+    /* background: var(--primary-light); */
+    /* background-color: red; */
+}
+a{
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+.controls {
+    /* background-color: yellow; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+}
+
+/* -------------------------- Buttons & Inputs -------------------------- */
+
+.btn {
+    border: none;
+    margin: 0.5em;
+    padding: 10px;
+    width: 10em;
+    /* background-color: cyan; */
+    background-color: #f6f6f6;
+    border: 2px solid var(--primary-dark);
+    border-radius: 5px ;
+    /* font-weight: bold; */
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
+}
+.mt-1{
+    margin-top: 1em;
+}
+#color-input{
+    border: none;
+}
+#range-input{
+    width: 70%;
+    margin: 0.9em 0;
+}
+/* #color-btn{} */
+/* #rainbow-btn{} */
+/* #eraser-btn{} */
+/* #clear-btn{} */
+
+/* -------------------------------- Grid -------------------------------- */
+#grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-light);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
+}
+.grid-item {
+    border: 1px solid #ddd;
+}
+.grid-item:hover {
+    background-color: #7aeaea;
+}
+
+/* ------------------------------- footer ------------------------------- */
+footer {
+    min-height: 50px;
+    background: var(--bg-primary);
+    color: var(--primary-dark);
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------- MEDIA QUERIES ---------------------------- */
+@media (max-width: 850px) {
+    #grid {
+        width: 400px;
+        height: 400px;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+@media (max-width: 650px) {
+    #grid {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* ---------------------------- MEDIA QUERIES ---------------------------- */
