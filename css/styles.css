@@ -7,7 +7,6 @@
     --primary-light: #ededed;
     --secondary-light: #fefefe;
     --bg-primary:#82b1ff;
-    --bg-primary:#90caf9;
     --bg-secondary:#b2ebf2;
 }
 * {
@@ -25,14 +24,13 @@ body {
 }
 header {
     min-height: 50px;
-    padding-top: 2em;
+    margin: 0.5em 0;
     font-size: 1.3em;
-    background: lightcyan;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-primary);
-    text-shadow: rgba(0, 0, 0, 0.317) 3px 1px 10px;
+    text-shadow: rgba(0, 0, 0, 0.1) 3px 1px 10px;
 
 }
 main {
@@ -40,16 +38,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 36px 0;
-    /* background: var(--primary-light); */
-    /* background-color: red; */
 }
 a{
     text-decoration: none;
     color: var(--primary-dark);
 }
 .controls {
-    /* background-color: yellow; */
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -65,11 +59,9 @@ a{
     margin: 0.5em;
     padding: 10px;
     width: 10em;
-    /* background-color: cyan; */
-    background-color: #f6f6f6;
+    background-color: var(--secondary-light);
     border: 2px solid var(--primary-dark);
     border-radius: 5px ;
-    /* font-weight: bold; */
     font-size: 16px;
     box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
 }
@@ -93,13 +85,14 @@ a{
     display: grid;
     width: 500px;
     height: 500px;
+    margin: 0.5em 0;
     background-color: var(--secondary-light);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
 }
 .grid-item {
-    border: 1px solid #ddd;
+    border: 0.5px solid #ddd;
 }
 .grid-item:hover {
     background-color: #7aeaea;

@@ -10,7 +10,8 @@ makeRows = (rows, cols) => {
     };
 };
 
-makeRows(16, 16);
+// makeRows(16, 16);
+makeRows(32, 32);
 // makeRows(64, 64);
 // makeRows(256, 256);
 // makeRows(10, 10);
