@@ -15,6 +15,9 @@ makeRows(32, 32);
 // makeRows(64, 64);
 // makeRows(256, 256);
 // makeRows(10, 10);
-
 // pointer button
 // heart effect
+/* #color-btn{} */
+/* #rainbow-btn{} */
+/* #eraser-btn{} */
+/* #clear-btn{} */
