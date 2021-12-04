@@ -139,4 +139,10 @@ footer {
         height: 300px;
     }
 }
+@media(hover: hover) and (pointer: fine) {
+    .btn:hover {
+        background-color: var(--primary-purple);
+        color: var(--primary-light);
+    }
+}
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
