@@ -19,13 +19,20 @@
         <div class="controls">
             <input id="range-input" type="range" value="32" min="1" max="64">
             <label for="grid-range"><span class="span">32</span> X <span class="span">32</span></label>
-            <button class="btn mt-1">Color Mode
-                <pre></pre><input id="color-input" type="color" value="#444444">
-            </button>
-            <!-- <button id="color-btn" class="btn">Color Mode</button> -->
-            <button id="rainbow-btn" class="btn">Rainbow Mode</button>
-            <button id="eraser-btn" class="btn">Eraser</button>
-            <button id="clear-btn" class="btn">Clear</button>
+            <div class="controls__container">
+                <div class="left">
+                    <button class="btn mt-1">Color Mode
+                        <pre></pre><input id="color-input" type="color" value="#454545">
+                    </button>
+                    <button id="random-btn" class="btn">Random color</button>
+                    <button id="rainbow-btn" class="btn">Rainbow Mode</button>
+                </div>
+                <div class="right">
+                    <button id="toggle-grid" class="btn">Toggle Grid</button>
+                    <button id="eraser-btn" class="btn">Eraser</button>
+                    <button id="clear-btn" class="btn">Clear</button>
+                </div>
+            </div>
         </div>
     </main>
 

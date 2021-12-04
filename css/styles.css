@@ -3,11 +3,12 @@
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
-    --primary-dark: #424242 ;
+    --primary-purple: #673ab7;
+    --secondary-purple: #512da8;
     --primary-light: #ededed;
     --secondary-light: #fefefe;
-    --bg-primary:#82b1ff;
-    --bg-secondary:#b2ebf2;
+    --bg-primary: #82b1ff;
+    --bg-secondary: #b2ebf2;
 }
 * {
     margin: 0;
@@ -31,7 +32,6 @@ header {
     justify-content: center;
     background: var(--bg-primary);
     text-shadow: rgba(0, 0, 0, 0.1) 3px 1px 10px;
-
 }
 main {
     display: flex;
@@ -39,43 +39,19 @@ main {
     align-items: center;
     flex-direction: row-reverse;
 }
-a{
+a {
     text-decoration: none;
-    color: var(--primary-dark);
+    color: var(--primary-purple);
 }
-.controls {
-    width: 300px;
+.controls,.left,.right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 0;
 }
-
-/* -------------------------- Buttons & Inputs -------------------------- */
-.btn {
-    border: none;
-    margin: 0.5em;
-    padding: 10px;
-    width: 10em;
-    background-color: var(--secondary-light);
-    border: 2px solid var(--primary-dark);
-    border-radius: 5px ;
-    font-size: 16px;
-    box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
-}
-.btn:hover{
-    transform: scale(1.1);
-}
-.mt-1{
-    margin-top: 1em;
-}
-#color-input{
-    border: none;
-}
-#range-input{
-    width: 70%;
-    margin: 0.9em 0;
+.controls {
+    width: 300px;
 }
 
 /* -------------------------------- Grid -------------------------------- */
@@ -87,21 +63,53 @@ a{
     background-color: var(--secondary-light);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
+    box-shadow: #673ab7 3px 1px 10px;
 }
 .grid-item {
     border: 0.5px solid #ddd;
-    background-color:var(--primary-light);
+    background-color: #ffffff;
 }
 .grid-item:hover {
     background-color: #7aeaea;
+}
+
+/* -------------------------- Buttons & Inputs -------------------------- */
+.btn {
+    border: none;
+    margin: 0.5em;
+    padding: 10px;
+    width: 10em;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--primary-purple);
+    color: var(--secondary-purple);
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.545) 3px 1px 10px;
+}
+.btn:hover {
+    background-color: var(--primary-purple);
+    color: var(--primary-light);
+}
+.active {
+    background-color: var(--primary-purple);
+    color: var(--primary-light);
+}
+.mt-1 {
+    margin-top: 1em;
+}
+#color-input {
+    border: none;
+}
+#range-input {
+    width: 70%;
+    margin: 0.9em 0;
 }
 
 /* ------------------------------- footer ------------------------------- */
 footer {
     min-height: 50px;
     background: var(--bg-primary);
-    color: var(--primary-dark);
+    color: var(--primary-purple);
     margin-top: auto;
     display: flex;
     align-items: center;
@@ -117,6 +125,13 @@ footer {
     main {
         flex-direction: column;
     }
+    .controls__container{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
 }
 @media (max-width: 650px) {
     #grid {
