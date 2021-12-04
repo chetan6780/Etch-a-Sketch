@@ -1,20 +1,20 @@
 const grid = document.getElementById("grid");
 const gridRange = document.getElementById("range-input");
 const span = document.getElementsByClassName("span");
-let btn = document.getElementsByClassName("btn");
 const colorInput = document.getElementById("color-input");
 const randomBtn = document.getElementById("random-btn");
 const rainbowBtn = document.getElementById("rainbow-btn");
 const toggleGrid = document.getElementById("toggle-grid");
 const eraserBtn = document.getElementById("eraser-btn");
 const clearBtn = document.getElementById("clear-btn");
-
+let btn = document.getElementsByClassName("btn");
 
 let CURRENT_COLOR = "#FFFFFF";
 let CURRENT_SIZE = "32";
 let CURRENT_MODE = "color";
 let TOGGLE_GRID = false;
 
+// Create the grid
 makeGrid = (rows, cols) => {
     grid.innerHTML = '';
     grid.style.setProperty('--grid-rows', rows);
@@ -27,6 +27,8 @@ makeGrid = (rows, cols) => {
         grid.appendChild(box);
     };
 };
+
+// Change the color of the box
 changeColor = (e) => {
     if (CURRENT_MODE === 'rainbow') {
         e.target.style.backgroundColor = getRandomColor();
@@ -37,14 +39,39 @@ changeColor = (e) => {
     } else {
         e.target.style.backgroundColor = "#FFFFFF";
     }
-}
+};
 
+// Remove active class from buttons
 removeActive = () => {
     for (let i = 1; i < btn.length - 1; i++) {
         btn[i].classList.remove("active");
     }
 }
 
+// Returns => random color
+getRandomColor = () => {
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    let randomColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+    return randomColor;
+}
+
+/* ----------------------------- Range input effects ----------------------------- */
+// changes the value of the span element
+gridRange.onmousemove = () => {
+    CURRENT_SIZE = gridRange.value;
+    span[0].innerHTML = CURRENT_SIZE;
+    span[1].innerHTML = CURRENT_SIZE;
+};
+
+// Changes the size of grid
+gridRange.onchange = () => {
+    CURRENT_SIZE = gridRange.value;
+    makeGrid(CURRENT_SIZE, CURRENT_SIZE);
+};
+
+/* ------------------------------- Button effects ------------------------------- */
 colorInput.onchange = () => {
     CURRENT_MODE = "color";
     removeActive();
@@ -78,45 +105,10 @@ toggleGrid.onclick = (e) => {
 }
 clearBtn.onclick = () => {
     removeActive();
-    grid.innerHTML = "";
     makeGrid(CURRENT_SIZE, CURRENT_SIZE);
 }
+/* ------------------------------- Button effects ------------------------------- */
 
-getRandomColor = () => {
-    const randomR = Math.floor(Math.random() * 256);
-    const randomG = Math.floor(Math.random() * 256);
-    const randomB = Math.floor(Math.random() * 256);
-    let randomColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
-    return randomColor;
-}
-
-
-gridRange.onmousemove = () => {
-    CURRENT_SIZE = gridRange.value;
-    span[0].innerHTML = CURRENT_SIZE;
-    span[1].innerHTML = CURRENT_SIZE;
-};
-
-gridRange.onchange = () => {
-    CURRENT_SIZE = gridRange.value;
+window.onload = () => {
     makeGrid(CURRENT_SIZE, CURRENT_SIZE);
-};
-
-
-// window.onload = () => {
-// const n = prompt("Enter number between 1 and 100");
-// console.log(gridRange);
-// makeGrid(4, 4);
-makeGrid(CURRENT_SIZE, CURRENT_SIZE);
-var gridItem = document.getElementsByClassName("grid-item")
-
-// }
-
-// makeGrid(16, 16);
-// makeGrid(32, 32);
-// makeGrid(n, n);
-// makeGrid(64, 64);
-// makeGrid(256, 256);
-// makeGrid(10, 10);
-// pointer button
-// heart effect
+}

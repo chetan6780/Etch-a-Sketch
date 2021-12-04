@@ -16,6 +16,8 @@
     box-sizing: border-box;
     font-family: "Balsamiq Sans", cursive;
 }
+
+/* -------------------------------- Body & main -------------------------------- */
 body {
     height: 100vh;
     margin: 0;
@@ -23,31 +25,34 @@ body {
     flex-direction: column;
     background: var(--bg-primary);
 }
+main,
+header,
+footer,
+.controls,
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header {
     min-height: 50px;
     margin: 0.5em 0;
     font-size: 1.3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: var(--bg-primary);
     text-shadow: rgba(0, 0, 0, 0.1) 3px 1px 10px;
 }
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row-reverse;
 }
 a {
     text-decoration: none;
     color: var(--primary-purple);
 }
-.controls,.left,.right {
-    display: flex;
+.controls,
+.left,
+.right {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 0;
 }
 .controls {
@@ -63,14 +68,14 @@ a {
     background-color: var(--secondary-light);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    box-shadow: #673ab7 3px 1px 10px;
+    box-shadow: var(--primary-purple) 3px 1px 10px;
 }
 .grid-item {
-    border: 0.5px solid #ddd;
-    background-color: #ffffff;
+    border: 0.5px solid var(--primary-light);
+    background-color: white;
 }
 .grid-item:hover {
-    background-color: #7aeaea;
+    background-color: var(--bg-primary);
 }
 
 /* -------------------------- Buttons & Inputs -------------------------- */
@@ -111,9 +116,6 @@ footer {
     background: var(--bg-primary);
     color: var(--primary-purple);
     margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
@@ -125,24 +127,17 @@ footer {
     main {
         flex-direction: column;
     }
-    .controls__container{
+    .controls__container {
         width: 300px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
-    
 }
 @media (max-width: 650px) {
     #grid {
         width: 300px;
         height: 300px;
-    }
-}
-@media(hover: hover) and (pointer: fine) {
-    .btn:hover {
-        background-color: var(--primary-purple);
-        color: var(--primary-light);
     }
 }
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
