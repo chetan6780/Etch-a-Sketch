@@ -36,3 +36,7 @@ Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-
         <img src="images/mobileG.png" alt="mobile grid" style="width: 48%;">
     </div>
 </details>
+
+---
+
+<div>favicon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
