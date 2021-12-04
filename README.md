@@ -7,23 +7,23 @@ Hosted on [Github-Pages](https://chetan6780.github.io/Etch-a-Sketch/)
 
 ### 1. Canvas without grid:
 
-![With no Grid](images\noGrid.png)
+![With no Grid](images/noGrid.png)
 
 ### 2. Canvas with grid:
 
-![With Grid](images\Grid.png)
+![With Grid](images/grid.png)
 
 ### 3. Rainbow Mode:
 
-![Rainbow Mode](images\rainbow.png)
+![Rainbow Mode](images/rainbow.png)
 
 ### 4. Color mode:
 
-![Color mode](images\colorMode.png)
+![Color mode](images/colorMode.png)
 
 ### 5. Random Color Mode:
 
-![Random Color Mode](images\randomColor.png)
+![Random Color Mode](images/randomColor.png)
 
 ---
 
