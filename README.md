@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
 Etch-a-Sketch is a simple and responsive drawing application.
-Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-Sketch/)
+Hosted on Github-Pages click on [Live Application](https://chetan6780.github.io/Etch-a-Sketch/)
 
 # Features
 
