@@ -62,13 +62,13 @@ a {
 /* -------------------------------- Grid -------------------------------- */
 #grid {
     display: grid;
-    width: 500px;
-    height: 500px;
-    margin: 0.5em 0;
     background-color: var(--secondary-light);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     box-shadow: var(--primary-purple) 3px 1px 10px;
+    width: 500px;
+    height: 500px;
+    margin: 0.5em 0;
 }
 .grid-item {
     border: 0.5px solid var(--primary-light);

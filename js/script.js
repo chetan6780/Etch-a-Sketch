@@ -13,6 +13,7 @@ let CURRENT_COLOR = "#FFFFFF";
 let CURRENT_SIZE = "32";
 let CURRENT_MODE = "color";
 let TOGGLE_GRID = true;
+let PEN_ACTIVE = false;
 
 // Create the grid
 makeGrid = (rows, cols) => {
@@ -23,22 +24,23 @@ makeGrid = (rows, cols) => {
         let box = document.createElement("div");
         box.className = "grid-item";
         if (TOGGLE_GRID) { box.style.border = "0px"; }
-        box.addEventListener("mouseleave", changeColor);
+        box.addEventListener("mouseover", changeColor);
         grid.appendChild(box);
     };
 };
 
 // Change the color of the box
 changeColor = (e) => {
-    if (CURRENT_MODE === 'rainbow') {
-        e.target.style.backgroundColor = getRandomColor();
-    } else if (CURRENT_MODE === 'color') {
-        e.target.style.backgroundColor = colorInput.value;
-    } else if (CURRENT_MODE === 'random') {
-        e.target.style.backgroundColor = CURRENT_COLOR;
-    } else {
-        e.target.style.backgroundColor = "#FFFFFF";
-    }
+    if (PEN_ACTIVE === true)
+        if (CURRENT_MODE === 'rainbow') {
+            e.target.style.backgroundColor = getRandomColor();
+        } else if (CURRENT_MODE === 'color') {
+            e.target.style.backgroundColor = colorInput.value;
+        } else if (CURRENT_MODE === 'random') {
+            e.target.style.backgroundColor = CURRENT_COLOR;
+        } else {
+            e.target.style.backgroundColor = "#FFFFFF";
+        }
 };
 
 // Remove active class from buttons
@@ -70,6 +72,11 @@ gridRange.onchange = () => {
     CURRENT_SIZE = gridRange.value;
     makeGrid(CURRENT_SIZE, CURRENT_SIZE);
 };
+
+// Toggle the pen
+grid.onclick = (e) => {
+    PEN_ACTIVE = !PEN_ACTIVE; // Toggle pen
+}
 
 /* ------------------------------- Button effects ------------------------------- */
 colorInput.onchange = () => {
