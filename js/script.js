@@ -12,7 +12,7 @@ let btn = document.getElementsByClassName("btn");
 let CURRENT_COLOR = "#FFFFFF";
 let CURRENT_SIZE = "32";
 let CURRENT_MODE = "color";
-let TOGGLE_GRID = false;
+let TOGGLE_GRID = true;
 
 // Create the grid
 makeGrid = (rows, cols) => {
