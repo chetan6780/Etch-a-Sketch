@@ -91,6 +91,7 @@ a{
 }
 .grid-item {
     border: 0.5px solid #ddd;
+    background-color:var(--primary-light);
 }
 .grid-item:hover {
     background-color: #7aeaea;
