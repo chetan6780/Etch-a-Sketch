@@ -28,3 +28,11 @@ Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-
 ---
 
 **NOTE:** Due to hover effect does not work on mobile devices Etch-a-Sketch works only on **mouse supported devices**.
+
+<details>
+    <summary><b> Mobile Screenshots</b></summary>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="images/mobileNoG.png" alt="mobile no grid" style="width: 48%;">
+            <img src="images/mobileG.png" alt="mobile grid" style="width: 48%;">
+    </div>
+</details>
