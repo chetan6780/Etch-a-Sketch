@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
 Etch-a-Sketch is a simple and responsive drawing application.
-Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-Sketch/)
+Hosted on Github-Pages click on [Live Application](https://chetan6780.github.io/Etch-a-Sketch/)
 
 # Features
 
@@ -32,8 +32,8 @@ Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-
 <details>
     <summary><b> Mobile Screenshots</b></summary>
     <div style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="images/mobileNoG.png" alt="mobile no grid" style="width: 48%;">
-        <img src="images/mobileG.png" alt="mobile grid" style="width: 48%;">
+        <img src="images/mobileNoG.png" alt="mobile no grid" style="width: 40%;">
+        <img src="images/mobileG.png" alt="mobile grid" style="width: 40%;">
     </div>
 </details>
 
