@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
 Etch-a-Sketch is a simple and responsive drawing application.
-Hosted on [Github-Pages](https://chetan6780.github.io/Etch-a-Sketch/)
+Hosted on Github-Pages click on [Live Demo](https://chetan6780.github.io/Etch-a-Sketch/)
 
 # Features
 
@@ -27,4 +27,4 @@ Hosted on [Github-Pages](https://chetan6780.github.io/Etch-a-Sketch/)
 
 ---
 
-**NOTE:** Due to hover effect does not work on mobile devices our application works only in **mouse supported devices**.
+**NOTE:** Due to hover effect does not work on mobile devices Etch-a-Sketch works only on **mouse supported devices**.
