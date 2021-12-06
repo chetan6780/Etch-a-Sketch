@@ -27,7 +27,7 @@ Hosted on Github-Pages click on [Live Application](https://chetan6780.github.io/
 
 ---
 
-**NOTE:** Due to hover effect does not work on mobile devices Etch-a-Sketch works only on **mouse supported devices**.
+**NOTE:** Due to hover effect does not work on mobile devices Etch-a-Sketch **works only on mouse supported devices**.
 
 <details>
     <summary><b> Mobile Screenshots</b></summary>
