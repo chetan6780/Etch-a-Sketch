@@ -16,7 +16,7 @@ Hosted on Github-Pages click on [Live Application](https://chetan6780.github.io/
 ### 3. Rainbow Mode:
 
 <!-- ![Rainbow Mode](images/rainbow.png) -->
-![image](https://user-images.githubusercontent.com/62825092/152491612-258b7917-9be4-4e07-95cd-f34b51153c38.png)
+![image](https://user-images.githubusercontent.com/62825092/152492573-150da435-ba87-497e-ae17-a784351f93b8.png)
 
 
 ### 4. Color mode:
